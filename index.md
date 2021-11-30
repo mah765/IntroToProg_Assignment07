@@ -1,7 +1,5 @@
-## Intro to Programming: Python - Module 07
+### Intro to Programming: Python - Module 07
 ## Pickling and Structured Error Handling: Extending the To-Do List Script
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
 ### Summary
 - In this assignment, we were required to research two topics (pickling and structured error handling) and then create a script that demonstrates our working knowledge of both topics.
@@ -16,11 +14,6 @@ In PyCharm, I created a new project in the ‘Assignment_07” directory and the
 - Secondly, I added a number of try…except blocks to let the script run more smoothly, providing useful information to the user rather than exiting from the script entirely. These blocks allow me to print error messages to the user to let them modify their existing inputs, or to let them know (for instance) that a file could not be found.
 
 The script looks like this:
-
-
-
-
-
 
 ```markdown
 # ---------------------------------------------------------------------------- #
@@ -331,32 +324,39 @@ The next part of this assignment was to run the script I had just created. I fir
 After reading this file in from the text file, I added a new item called “wash dishes,” as shown below:
 
 **Screenshot 1A:**
+
 ![image](https://user-images.githubusercontent.com/74583008/143964096-66162528-56fd-4a64-8574-86f9ea232ba1.png)
 
-I then wrote the resulting list back to a text file, as shown below in Screenshot 2:
+I then wrote the resulting list back to a text file, as shown below in Screenshot 1B:
 
 **Screenshot 1B:**
+
 ![image](https://user-images.githubusercontent.com/74583008/143964139-b9411fab-a3e9-4d7d-bdeb-3e0004f7ed14.png)
 
 After running the script, the text file now looked like this:
+
 ![image](https://user-images.githubusercontent.com/74583008/143964154-43d4f686-d43c-4a1f-abd2-d9e05adafe7c.png)
 
 I then chose to also write the list to a pickle file by choosing Option 5, and then reading that pickle file back in as shown below:
 
 **Screenshot 1C:**
+
 ![image](https://user-images.githubusercontent.com/74583008/143964202-3385ef4c-b177-4056-93f2-b1f648dad027.png)
 
 As expected, when looking at the raw pickle file, it looks like this (below), which shows that pickling does indeed change the encoding by “flattening” the data into a stream of bytes:
+
 ![image](https://user-images.githubusercontent.com/74583008/143964237-d9e3d475-fc3c-4d72-b017-046804824f07.png)
 
 I then opened a command terminal window by typing “cmd” in the file directory bar. I then typed in “python Assignment_07.py” to execute the script located within this folder. For this part, I chose to read in the data from the pickle file I had just created. The results of the script are shown below:
 
 **Screenshot 2A:**
+
 ![image](https://user-images.githubusercontent.com/74583008/143964280-8d7c0930-8429-4098-a5ba-f5b6c8c395df.png)
 
 I also checked that the structured error handling enhancements were working correctly by trying to read in a file that did not exist. As shown in Screenshot 2 below, this threw an error message back to the user:
 
 **Screenshot 2B:**
+
 ![image](https://user-images.githubusercontent.com/74583008/143964337-6e2241e5-c4c6-47a3-a9a8-7877d9336911.png)
 
 ### Posting to Github
