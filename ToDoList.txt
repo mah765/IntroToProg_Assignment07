@@ -1,0 +1,3 @@
+sweep floor,low
+mow lawn,high
+wash dishes,low
